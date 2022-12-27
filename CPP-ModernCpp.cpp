@@ -1,7 +1,8 @@
-﻿#include "SmartPointerBasic.h"
-
+﻿//#include "SmartPointerBasic.h"
+#include "UniquePointer.h"
 
 int main()
 {
-    SmartPointerBasicTest();
+    //SmartPointerBasicTest();
+    UniquePointerTest();
 }

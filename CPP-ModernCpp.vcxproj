@@ -142,6 +142,7 @@
     <ClCompile Include="CPP-ModernCpp.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="UniquePointer.h" />
     <ClInclude Include="SmartPointerBasic.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

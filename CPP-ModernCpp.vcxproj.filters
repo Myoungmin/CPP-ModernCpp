@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\SmartPointer">
+      <UniqueIdentifier>{376550d9-ec8c-4795-a974-405840e9ed70}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPP-ModernCpp.cpp">
@@ -21,7 +24,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SmartPointerBasic.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\SmartPointer</Filter>
+    </ClInclude>
+    <ClInclude Include="UniquePointer.h">
+      <Filter>Header Files\SmartPointer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

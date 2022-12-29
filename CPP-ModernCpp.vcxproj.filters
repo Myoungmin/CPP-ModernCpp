@@ -29,5 +29,8 @@
     <ClInclude Include="UniquePointer.h">
       <Filter>Header Files\SmartPointer</Filter>
     </ClInclude>
+    <ClInclude Include="SharedPointer.h">
+      <Filter>Header Files\SmartPointer</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

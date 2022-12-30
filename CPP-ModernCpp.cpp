@@ -6,5 +6,6 @@ int main()
 {
     //SmartPointerBasicTest();
     //UniquePointerTest();
-    SharedPointerTest();
+    //SharedPointerTest();
+    CircularReferenceTest();
 }

@@ -15,6 +15,7 @@ public:
 	}
 
 	std::shared_ptr<Cat> m_pVar;
+	std::shared_ptr<Cat> m_pFriend;
 
 private:
 	int m_nAge;
@@ -31,7 +32,7 @@ void SharedPointerTest()
 }
 
 // shared_ptr를 사용하였을 때 메모리 릭이 발생할 수 있는 상황
-void CircularReferenceTest()
+void CircularReferenceTest1()
 {
 	{
 		std::shared_ptr<Cat> normalPtr = std::make_shared<Cat>();
@@ -46,4 +47,15 @@ void CircularReferenceTest()
 	// Circular Reference가 생겨서 Scope를 벗어나도 참조가 1개가 남아있어 해제가 안된다.
 
 	std::cout << "CircularReferenceTest End" << std::endl;
+}
+
+// shared_ptr를 사용할 때 가장 많이 하는 실수
+void CircularReferenceTest2()
+{
+	std::shared_ptr<Cat> pKitty = std::make_shared<Cat>();
+	std::shared_ptr<Cat> pNabi = std::make_shared<Cat>();
+
+	// 서로를 가리키게 하여 메모리 릭이 발생
+	pKitty->m_pFriend = pNabi;
+	pNabi->m_pFriend = pKitty;
 }

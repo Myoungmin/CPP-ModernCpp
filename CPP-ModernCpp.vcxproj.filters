@@ -32,5 +32,8 @@
     <ClInclude Include="SharedPointer.h">
       <Filter>Header Files\SmartPointer</Filter>
     </ClInclude>
+    <ClInclude Include="WeakPointer.h">
+      <Filter>Header Files\SmartPointer</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
